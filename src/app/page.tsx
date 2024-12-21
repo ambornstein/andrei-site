@@ -2,10 +2,35 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+    <div className="dark:bg-zinc-800 items-center justify-between min-h-screen p-4 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <h1 className="text-4xl w-fit m-auto">Andrei Bornstein</h1>
+      <ul className="flex w-fit m-auto flex-row *:text-2xl gap-8">
+        <li>Websites</li>
+        <li>Games</li>
+        <li>3D Design</li>
+      </ul>
+      <main className="flex overflow-x-scroll scroll-smooth scroll-m-96 snap-mandatory snap-x flex-row min-h-96 gap-8 row-start-2 items-center sm:items-start">
+        <div className="snap-center min-w-full items-center flex flex-col gap-16">
+          <div className="p-4 bg-neutral-300 hover:bg-slate-300">
+            <Image src="/aquarium-landing.PNG"
+            alt="Next.js logo"
+            width={400}
+            height={38}
+            priority/>
+          </div>
+          <div className="p-4 bg-stone-300">
+            <Image src="/kevin-site-landing.PNG"
+            alt="Next.js logo"
+            width={400}
+            height={38}
+            priority/>
+          </div>
+        </div>
+        <div className="snap-center min-w-full items-center flex flex-col gap-16">
+
+        
         <Image
-          className="dark:invert"
+          className="snap-center dark:invert"
           src="/next.svg"
           alt="Next.js logo"
           width={180}
@@ -22,6 +47,7 @@ export default function Home() {
           </li>
           <li>Save and see your changes instantly.</li>
         </ol>
+        </div>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
