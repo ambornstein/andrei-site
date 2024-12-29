@@ -8,21 +8,32 @@
   }
 
   .vert-arrangement {
-    @apply min-w-full items-center flex flex-col sm:p-2 sm:gap-8 gap-4 dark:bg-stone-500 divide-neutral-300 divide-dashed divide-y-4
+    @apply min-w-full items-center flex flex-col sm:p-2 sm:gap-8 gap-4 divide-neutral-300 divide-dashed divide-y-4
     *:p-2 *:pt-4;
+  }
+  
+  .hover-chip {
+    @apply hover:bg-background dark:hover:bg-foreground
   }
 }
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --highlight: #e5e5e5;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #2b2b2b;
     --foreground: #ededed;
+    --highlight: #737373;
   }
+}
+
+.bg-highlight {
+  --tw-bg-opacity: 1;
+  background-color: rgb((--highlight) / var(--tw-bg-opacity, 1))
 }
 
 body {
@@ -31,6 +42,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-a {
-  @apply underline text-blue-600 hover:text-blue-800 visited:text-purple-600
+a p, a {
+  @apply underline dark:text-blue-200 dark:hover:text-blue-400 hover:text-blue-800 dark:visited:text-purple-400 visited:text-purple-600
 }
