@@ -52,7 +52,7 @@ export default function Home() {
             <Image src="/dashboard_exp.PNG"
               alt="Next.js logo"
               width={600}
-              height={500}
+              height={300}
               priority />
           </div>
           <div className="group hover:bg-neutral-200">
