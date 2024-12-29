@@ -49,7 +49,7 @@ export default function Home() {
         <div id="sites" className="vert-arrangement">
           <div className="group hover:bg-neutral-200">
             <p className="hover-label">Embedded Finance-based Tuition Portal for WPI and Citizens Bank</p>
-            <Image src="/dashboard_exp.PNG"
+            <Image src="/dashboard-exp.png"
               alt="Next.js logo"
               width={600}
               height={300}
