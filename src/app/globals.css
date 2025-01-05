@@ -45,3 +45,23 @@ body {
 a p, a {
   @apply underline dark:text-blue-200 dark:hover:text-blue-400 hover:text-blue-800 dark:visited:text-purple-400 visited:text-purple-600
 }
+
+h1 {
+  @apply text-4xl
+}
+
+h2 {
+  @apply text-2xl
+}
+
+h3 {
+  @apply text-lg
+}
+
+p {
+  @apply mb-8 tracking-wide leading-7
+}
+
+label {
+  @apply mb-2 inline-block underline underline-offset-4
+}
