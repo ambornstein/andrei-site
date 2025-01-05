@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <div className="min-h-screen  gap-16 font-[family-name:var(--font-geist-sans)]">
       <header className="md:max-w-md mx-auto my-4">
-        <div className="bg-stone-300 dark:bg-neutral-800 text-center ring-2 p-2 mx-2 rounded-md ring-neutral-700">
+        <div className="bg-background text-center ring-2 p-2 mx-2 rounded-md ring-neutral-700">
           <h1>Andrei Bornstein</h1>
         </div>
         <ul className="flex flex-row justify-around text-center bg-[--highlight] rounded-2xl p-2 mx-4 mt-4 text-nowrap
@@ -56,6 +56,19 @@ export default function Home() {
                 For me it was a no brainer that I would study computer science when I finished high school. In May of 2024 I finally got my B.S. in
                 Computer Science from <a href="https://www.wpi.edu/">Worcester Polytechnic Institute</a>
               </p>
+            </div>
+            <div>
+              <Image
+                className="invert dark:invert-0"
+                src="/instagram.svg"
+                alt="Instagram"
+                width={40}
+                height={40}/>
+              <Image
+                src="/linkedin.png"
+                alt="LinkedIn"
+                width={40}
+                height={40}/>
             </div>
           </div>
         </div>
@@ -123,12 +136,12 @@ export default function Home() {
           <a className="group hover:bg-[--highlight]" href="/blender-gallery">
             <label className="hover-label">Blender Designs and Game Assets</label>
             <Image
-              src="/blender/house-2.png"
+              src="/house-2.png"
               alt="Blender Gallery"
               width={600}
               height={600}
-              priority/>
-            </a>
+              priority />
+          </a>
         </div>
       </main>
       <footer className="flex flex-wrap items-center justify-center">
