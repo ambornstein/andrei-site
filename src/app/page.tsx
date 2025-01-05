@@ -126,7 +126,7 @@ export default function Home() {
           <a className="group hover:bg-[--highlight]" href="https://www.thingiverse.com/ambornstein/designs">
             <label className="hover-label">SOLIDWORKS Designs on Sketchfab</label>
             <Image
-              src="/GUIDE-COMP.PNG"
+              src="/GUIDE-COMP.png"
               alt="Next.js logo"
               width={600}
               height={300}
