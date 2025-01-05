@@ -130,7 +130,7 @@ export default function Home() {
               alt="Next.js logo"
               width={600}
               height={600}
-              priority
+              unoptimized
             />
           </a>
           <a className="group hover:bg-[--highlight]" href="/blender-gallery">
@@ -140,7 +140,7 @@ export default function Home() {
               alt="Blender Gallery"
               width={600}
               height={600}
-              priority />
+              unoptimized />
           </a>
         </div>
       </main>

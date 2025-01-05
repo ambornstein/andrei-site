@@ -8,35 +8,35 @@ export default () => {
                 alt="Blender Gallery"
                 width={600}
                 height={600}
-                priority
+                unoptimized
             />
             <Image
                 src="/cutout.png"
                 alt="Blender Gallery"
                 width={600}
                 height={600}
-                priority
+                unoptimized
             />
             <Image
                 src="/experimental-cube.png"
                 alt="Blender Gallery"
                 width={600}
                 height={600}
-                priority
+                unoptimized
             />
             <Image
                 src="/blender-model.png"
                 alt="Blender Gallery"
                 width={600}
                 height={600}
-                priority
+                unoptimized
             />
             <Image
                 src="/marble-desk.png"
                 alt="Blender Gallery"
                 width={600}
                 height={600}
-                priority
+                unoptimized
             />
         </div>
     )
