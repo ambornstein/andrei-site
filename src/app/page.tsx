@@ -126,7 +126,7 @@ export default function Home() {
           <a className="group hover:bg-[--highlight]" href="https://www.thingiverse.com/ambornstein/designs">
             <label className="hover-label">SOLIDWORKS Designs on Sketchfab</label>
             <Image
-              src="/GUIDE-COMP.png"
+              src="/GUIDE-COMP.PNG"
               alt="Next.js logo"
               width={600}
               height={600}
@@ -136,7 +136,7 @@ export default function Home() {
           <a className="group hover:bg-[--highlight]" href="/blender-gallery">
             <label className="hover-label">Blender Designs and Game Assets</label>
             <Image
-              src="/house-2.png"
+              src="/house-2.PNG"
               alt="Blender Gallery"
               width={600}
               height={600}
