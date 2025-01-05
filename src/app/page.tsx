@@ -129,7 +129,7 @@ export default function Home() {
               src="/GUIDE-COMP.PNG"
               alt="Next.js logo"
               width={600}
-              height={600}
+              height={300}
               unoptimized
             />
           </a>
@@ -139,7 +139,7 @@ export default function Home() {
               src="/house-2.PNG"
               alt="Blender Gallery"
               width={600}
-              height={600}
+              height={300}
               unoptimized />
           </a>
         </div>
