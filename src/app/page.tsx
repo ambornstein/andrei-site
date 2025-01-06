@@ -54,26 +54,31 @@ export default function Home() {
               </p>
               <p>
                 For me it was a no brainer that I would study computer science when I finished high school. In May of 2024 I finally got my B.S. in
-                Computer Science from <a href="https://www.wpi.edu/">Worcester Polytechnic Institute</a>
+                Computer Science from <a href="https://www.wpi.edu/">Worcester Polytechnic Institute.</a>
               </p>
             </div>
-            <div>
-              <Image
-                className="invert dark:invert-0"
-                src="/instagram.svg"
-                alt="Instagram"
-                width={40}
-                height={40}/>
-              <Image
-                src="/linkedin.png"
-                alt="LinkedIn"
-                width={40}
-                height={40}/>
+            <div className="flex flex-row justify-around">
+              <a href="https://www.instagram.com/andrei_bornstein/">
+                <Image
+                  className="invert dark:invert-0"
+                  src="/instagram.svg"
+                  alt="Instagram"
+                  width={40}
+                  height={40} />
+              </a>
+              <a href="https://www.linkedin.com/in/andrei-b-6542a1142/">
+                <Image
+                  src="/linkedin.png"
+                  alt="LinkedIn"
+                  width={40}
+                  height={40} />
+              </a>
+              <a className="panel-link" href="/Andrei-B-Custom-Resume.pdf" download>Resume</a>
             </div>
           </div>
         </div>
-        <div id="sites" className="vert-arrangement">
-          <a className="group hover:bg-[--highlight]">
+        <div id="sites" className="vert-arrangement h-fit overflow-y-hidden">
+          <a className="group hover:bg-[--highlight] hover:scale-105 transition-all" href="/embedded-finance">
             <label className="hover-label">Embedded Finance-based Tuition Portal for WPI and Citizens Bank</label>
             <Image src="/dashboard-exp.png"
               alt="Next.js logo"
@@ -81,27 +86,7 @@ export default function Home() {
               height={300}
               priority />
           </a>
-          <a className="group hover:bg-[--highlight]">
-            <label className="hover-label">
-              <b>Grey Matter Boyz</b> Band Site
-            </label>
-            <Image src="/grey-matter-landing.PNG"
-              alt="Next.js logo"
-              width={600}
-              height={300}
-              priority />
-          </a>
-          <a className="group hover:bg-[--highlight]">
-            <label className="hover-label">
-              Kevin the Carpenter's Comedy Site
-            </label>
-            <Image src="/kevin-site-landing.PNG"
-              alt="Next.js logo"
-              width={600}
-              height={300}
-              priority />
-          </a>
-          <a className="group hover:bg-[--highlight]" href="/projects">
+          <a className="group hover:bg-[--highlight] hover:scale-105 transition-all" href="/projects">
             <label className="hover-label">
               Aquarium Jellyfish Exhibit Review Map
             </label>
@@ -111,19 +96,70 @@ export default function Home() {
               height={300}
               priority />
           </a>
+          <a className="group hover:bg-[--highlight] hover:scale-105 transition-all" href="http://kevinthecarpenter.com">
+            <label className="hover-label">
+              Kevin the Carpenter's Comedy Site
+            </label>
+            <Image src="/kevin-site-landing.PNG"
+              alt="Next.js logo"
+              width={600}
+              height={300}
+              priority />
+          </a>
+          <a className="group hover:bg-[--highlight] hover:scale-105 transition-all" href="https://grey-matter-site--kevin-carpenter-app.us-central1.hosted.app/">
+            <label className="hover-label">
+              <b>Grey Matter Boyz</b> Band Site
+            </label>
+            <Image src="/grey-matter-landing.PNG"
+              alt="Next.js logo"
+              width={600}
+              height={300}
+              priority />
+          </a>
         </div>
         <div id="games" className="vert-arrangement">
-          <Image
-            className="dark:invert"
-            src="/next.svg"
-            alt="Next.js logo"
-            width={180}
-            height={38}
-            priority
-          />
+          <a className="group hover:bg-[--highlight] hover:scale-105 transition-all" href="/evo-prototype">
+            <label className="hover-label">
+              Top-Down ARPG Prototype
+            </label>
+            <Image
+              className="dark:invert"
+              src="/exo-prototype.png"
+              alt="Next.js logo"
+              width={600}
+              height={38}
+              priority
+            />
+          </a>
+          <a className="group hover:bg-[--highlight] hover:scale-105 transition-all" href="/dmh">
+            <label className="hover-label">
+              Real-time Squad Tactics Prototype
+            </label>
+            <Image
+              className="dark:invert"
+              src="/game-banner.png"
+              alt="Next.js logo"
+              width={600}
+              height={200}
+              priority
+            />
+          </a>
+          <a className="group hover:bg-[--highlight] hover:scale-105 transition-all" href="https://github.com/ambornstein/ASCII-Game-Framework">
+            <label className="hover-label">
+              Traditional ASCII Roguelike Framework
+            </label>
+            <Image
+              className="dark:invert"
+              src="/roguelike-demo.gif"
+              alt="Next.js logo"
+              width={400}
+              height={400}
+              priority
+            />
+          </a>
         </div>
         <div id="art" className="vert-arrangement">
-          <a className="group hover:bg-[--highlight]" href="https://www.thingiverse.com/ambornstein/designs">
+          <a className="group hover:bg-[--highlight] hover:scale-105 transition-all" href="https://www.thingiverse.com/ambornstein/designs">
             <label className="hover-label">SOLIDWORKS Designs on Sketchfab</label>
             <Image
               src="/GUIDE-COMP.png"
@@ -133,7 +169,7 @@ export default function Home() {
               unoptimized
             />
           </a>
-          <a className="group hover:bg-[--highlight]" href="/blender-gallery">
+          <a className="group hover:bg-[--highlight] hover:scale-105 transition-all" href="/blender-gallery">
             <label className="hover-label">Blender Designs and Game Assets</label>
             <Image
               src="/house-2.PNG"
@@ -145,7 +181,6 @@ export default function Home() {
         </div>
       </main>
       <footer className="flex flex-wrap items-center justify-center">
-        Operation Asymmetry
       </footer>
     </div>
   );
