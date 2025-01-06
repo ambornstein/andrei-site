@@ -135,10 +135,10 @@ export default function Home() {
               Real-time Squad Tactics Prototype
             </label>
             <Image
-              src="/game-banner.png"
+              src="/game-banner.PNG"
               alt="Next.js logo"
               width={600}
-              height={40}
+              height={300}
               priority
             />
           </a>
