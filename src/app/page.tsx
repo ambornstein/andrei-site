@@ -123,7 +123,6 @@ export default function Home() {
               Top-Down ARPG Prototype
             </label>
             <Image
-              className="dark:invert"
               src="/exo-prototype.png"
               alt="Next.js logo"
               width={600}
@@ -136,11 +135,10 @@ export default function Home() {
               Real-time Squad Tactics Prototype
             </label>
             <Image
-              className="dark:invert"
               src="/game-banner.png"
               alt="Next.js logo"
               width={600}
-              height={200}
+              height={40}
               priority
             />
           </a>
