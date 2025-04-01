@@ -24,8 +24,8 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen  gap-16 font-[family-name:var(--font-geist-sans)]">
-      <header className="md:max-w-md mx-auto my-4">
+    <div className="min-h-screen gap-16 font-[family-name:var(--font-geist-sans)] light-grad dark:dark-grad">
+      <header className="md:max-w-md mx-auto py-4">
         <div className="bg-background text-center ring-2 p-2 mx-2 rounded-md ring-neutral-700">
           <h1>Andrei Bornstein</h1>
         </div>
@@ -37,7 +37,7 @@ export default function Home() {
           <a className="hover-chip" tabIndex={2} onClick={() => scrollTo("art")}>2D/3D Art</a>
         </ul>
       </header>
-      <main className="flex flex-row gap-4 m-4 overflow-x-auto scroll-smooth snap-x snap-mandatory *:snap-center *:scroll-mt-10">
+      <main className="flex flex-row gap-4 m-4 overflow-x-auto scroll-smooth snap-x snap-mandatory *:snap-center *:scroll-mt-10 ">
         <div id="about" className="min-w-full h-full items-center">
           <div className="sm:w-7/12 flow-root m-auto text-lg">
             <h2 className="pt-4 pb-8 text-center">Hi, I'm Andrei, I am a:</h2>
@@ -78,7 +78,7 @@ export default function Home() {
           </div>
         </div>
         <div id="sites" className="vert-arrangement h-fit overflow-y-hidden">
-          <a className="group hover:bg-[--highlight] hover:scale-105 transition-all" href="/embedded-finance">
+          <a className="group hover:bg-[--background] hover:scale-105 transition-all" href="/embedded-finance">
             <label className="hover-label">Embedded Finance-based Tuition Portal for WPI and Citizens Bank</label>
             <Image src="/dashboard-exp.png"
               alt="Next.js logo"
@@ -86,7 +86,7 @@ export default function Home() {
               height={300}
               priority />
           </a>
-          <a className="group hover:bg-[--highlight] hover:scale-105 transition-all" href="/projects">
+          <a className="group hover:bg-[--background] hover:scale-105 transition-all" href="/projects">
             <label className="hover-label">
               Aquarium Jellyfish Exhibit Review Map
             </label>
@@ -96,7 +96,7 @@ export default function Home() {
               height={300}
               priority />
           </a>
-          <a className="group hover:bg-[--highlight] hover:scale-105 transition-all" href="http://kevinthecarpenter.com">
+          <a className="group hover:bg-[--background] hover:scale-105 transition-all" href="http://kevinthecarpenter.com">
             <label className="hover-label">
               Kevin the Carpenter's Comedy Site
             </label>
@@ -106,7 +106,7 @@ export default function Home() {
               height={300}
               priority />
           </a>
-          <a className="group hover:bg-[--highlight] hover:scale-105 transition-all" href="https://grey-matter-site--kevin-carpenter-app.us-central1.hosted.app/">
+          <a className="group hover:bg-[--background] hover:scale-105 transition-all" href="https://grey-matter-site--kevin-carpenter-app.us-central1.hosted.app/">
             <label className="hover-label">
               <b>Grey Matter Boyz</b> Band Site
             </label>
@@ -118,7 +118,7 @@ export default function Home() {
           </a>
         </div>
         <div id="games" className="vert-arrangement">
-          <a className="group hover:bg-[--highlight] hover:scale-105 transition-all" href="/evo-prototype">
+          <a className="group hover:bg-[--background] hover:scale-105 transition-all" href="/evo-prototype">
             <label className="hover-label">
               Top-Down ARPG Prototype
             </label>
@@ -130,7 +130,7 @@ export default function Home() {
               priority
             />
           </a>
-          <a className="group hover:bg-[--highlight] hover:scale-105 transition-all" href="/dmh">
+          <a className="group hover:bg-[--background] hover:scale-105 transition-all" href="/dmh">
             <label className="hover-label">
               Real-time Squad Tactics Prototype
             </label>
@@ -142,7 +142,7 @@ export default function Home() {
               priority
             />
           </a>
-          <a className="group hover:bg-[--highlight] hover:scale-105 transition-all" href="https://github.com/ambornstein/ASCII-Game-Framework">
+          <a className="group hover:bg-[--background] hover:scale-105 transition-all" href="https://github.com/ambornstein/ASCII-Game-Framework">
             <label className="hover-label">
               Traditional ASCII Roguelike Framework
             </label>
@@ -157,7 +157,7 @@ export default function Home() {
           </a>
         </div>
         <div id="art" className="vert-arrangement">
-          <a className="group hover:bg-[--highlight] hover:scale-105 transition-all" href="https://www.thingiverse.com/ambornstein/designs">
+          <a className="group hover:bg-[--background] hover:scale-105 transition-all" href="https://www.thingiverse.com/ambornstein/designs">
             <label className="hover-label">SOLIDWORKS Designs on Sketchfab</label>
             <Image
               src="/GUIDE-COMP.png"
@@ -167,7 +167,7 @@ export default function Home() {
               unoptimized
             />
           </a>
-          <a className="group hover:bg-[--highlight] hover:scale-105 transition-all" href="/blender-gallery">
+          <a className="group hover:bg-[--background] hover:scale-105 transition-all" href="/blender-gallery">
             <label className="hover-label">Blender Designs and Game Assets</label>
             <Image
               src="/house-2.PNG"
