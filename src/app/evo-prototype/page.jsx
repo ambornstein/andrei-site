@@ -8,18 +8,15 @@ export default () => {
                 <Image src="/exo-prototype.png"
                     alt="Next.js logo"
                     width={600}
-                    height={300}
-                    priority />
+                    height={300} unoptimized/>
                 <Image src="/exo-inventory.png"
                     alt="Next.js logo"
                     width={600}
-                    height={300}
-                    priority />
+                    height={300} unoptimized/>
                 <Image src="/exo-skills.png"
                     alt="Next.js logo"
                     width={600}
-                    height={300}
-                    priority />
+                    height={300} unoptimized/>
             </div>
         </div>
     )
