@@ -1,4 +1,5 @@
 'use client'
+import Panel from "@/component/Panel";
 import Image from "next/image";
 
 const IMAGE_REGEX = /^\.(png|gif|ico|jpg|jpeg)$/
@@ -78,104 +79,19 @@ export default function Home() {
           </div>
         </div>
         <div id="sites" className="vert-arrangement h-fit overflow-y-hidden">
-          <a className="group hover:bg-[--background] hover:scale-105 transition-all" href="/embedded-finance">
-            <label className="hover-label">Embedded Finance-based Tuition Portal for WPI and Citizens Bank</label>
-            <Image src="/dashboard-exp.png"
-              alt="Next.js logo"
-              width={600}
-              height={300}
-              priority />
-          </a>
-          <a className="group hover:bg-[--background] hover:scale-105 transition-all" href="/projects">
-            <label className="hover-label">
-              Aquarium Jellyfish Exhibit Review Map
-            </label>
-            <Image src="/aquarium-landing.PNG"
-              alt="Next.js logo"
-              width={600}
-              height={300}
-              priority />
-          </a>
-          <a className="group hover:bg-[--background] hover:scale-105 transition-all" href="http://kevinthecarpenter.com">
-            <label className="hover-label">
-              Kevin the Carpenter's Comedy Site
-            </label>
-            <Image src="/kevin-site-landing.PNG"
-              alt="Next.js logo"
-              width={600}
-              height={300}
-              priority />
-          </a>
-          <a className="group hover:bg-[--background] hover:scale-105 transition-all" href="https://grey-matter-site--kevin-carpenter-app.us-central1.hosted.app/">
-            <label className="hover-label">
-              <b>Grey Matter Boyz</b> Band Site
-            </label>
-            <Image src="/grey-matter-landing.PNG"
-              alt="Next.js logo"
-              width={600}
-              height={300}
-              priority />
-          </a>
+          <Panel pointURL="/embedded-finance" labelText="Embedded Finance-based Tuition Portal for WPI and Citizens Bank" imgUrl="/dashboard-exp.png" />
+          <Panel pointURL="/projects" labelText="Aquarium Jellyfish Exhibit Review Map" imgUrl="/aquarium-landing.PNG" />
+          <Panel pointURL="http://kevinthecarpenter.com" labelText="Kevin the Carpenter's Comedy Site" imgUrl="/kevin-site-landing.PNG" />
+          <Panel pointURL="https://grey-matter-site--kevin-carpenter-app.us-central1.hosted.app/" labelText="<b>Grey Matter Boyz</b> Band Site" imgUrl="/grey-matter-landing.PNG" />
         </div>
         <div id="games" className="vert-arrangement">
-          <a className="group hover:bg-[--background] hover:scale-105 transition-all" href="/evo-prototype">
-            <label className="hover-label">
-              Top-Down ARPG Prototype
-            </label>
-            <Image
-              src="/exo-prototype.png"
-              alt="Next.js logo"
-              width={600}
-              height={38}
-              priority
-            />
-          </a>
-          <a className="group hover:bg-[--background] hover:scale-105 transition-all" href="/dmh">
-            <label className="hover-label">
-              Real-time Squad Tactics Prototype
-            </label>
-            <Image
-              src="/game-banner.PNG"
-              alt="Next.js logo"
-              width={600}
-              height={300}
-              priority
-            />
-          </a>
-          <a className="group hover:bg-[--background] hover:scale-105 transition-all" href="https://github.com/ambornstein/ASCII-Game-Framework">
-            <label className="hover-label">
-              Traditional ASCII Roguelike Framework
-            </label>
-            <Image
-              className="dark:invert"
-              src="/roguelike-demo.gif"
-              alt="Next.js logo"
-              width={400}
-              height={400}
-              priority
-            />
-          </a>
+          <Panel pointURL="/evo-prototype" labelText="Top-Down ARPG Prototype" imgUrl="/exo-prototype.png" />
+          <Panel pointURL="/dmh" labelText="Real-time Squad Tactics Prototype" imgUrl="/game-banner.PNG" />
+          <Panel pointURL="https://github.com/ambornstein/ASCII-Game-Framework" labelText="ASCII Roguelike Framework" imgUrl="/roguelike-demo.gif" />
         </div>
         <div id="art" className="vert-arrangement">
-          <a className="group hover:bg-[--background] hover:scale-105 transition-all" href="https://www.thingiverse.com/ambornstein/designs">
-            <label className="hover-label">SOLIDWORKS Designs on Sketchfab</label>
-            <Image
-              src="/GUIDE-COMP.png"
-              alt="Next.js logo"
-              width={600}
-              height={300}
-              unoptimized
-            />
-          </a>
-          <a className="group hover:bg-[--background] hover:scale-105 transition-all" href="/blender-gallery">
-            <label className="hover-label">Blender Designs and Game Assets</label>
-            <Image
-              src="/house-2.PNG"
-              alt="Blender Gallery"
-              width={600}
-              height={300}
-              unoptimized />
-          </a>
+          <Panel pointURL="https://www.thingiverse.com/ambornstein/designs" labelText="SOLIDWORKS Designs on Sketchfab" imgUrl="/GUIDE-COMP.png" />
+          <Panel pointURL="/blender-gallery" labelText="Blender Designs and Game Assets" imgUrl="/house-2.PNG" />
         </div>
       </main>
       <footer className="flex flex-wrap items-center justify-center">
