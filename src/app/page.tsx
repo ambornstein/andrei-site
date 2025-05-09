@@ -1,5 +1,5 @@
 'use client'
-import Panel from "@/component/Panel";
+import Panel from "@/components/Panel";
 import Image from "next/image";
 
 const IMAGE_REGEX = /^\.(png|gif|ico|jpg|jpeg)$/
@@ -26,7 +26,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen gap-16 font-[family-name:var(--font-geist-sans)] light-grad dark:dark-grad">
-      <header className="md:max-w-md mx-auto py-4">
+      <header className="md:max-w-md mx-auto pt-4">
         <div className="bg-background text-center ring-2 p-2 mx-2 rounded-md ring-neutral-700">
           <h1>Andrei Bornstein</h1>
         </div>
@@ -38,7 +38,7 @@ export default function Home() {
           <a className="hover-chip" tabIndex={2} onClick={() => scrollTo("art")}>2D/3D Art</a>
         </ul>
       </header>
-      <main className="flex flex-row gap-4 m-4 overflow-x-auto scroll-smooth snap-x snap-mandatory *:snap-center *:scroll-mt-10 ">
+      <main className="flex flex-row mb-4 mt-2 mx-2 md:mx-0 overflow-x-auto scroll-smooth snap-x snap-mandatory *:snap-center *:scroll-mt-10 ">
         <div id="about" className="min-w-full h-full items-center">
           <div className="sm:w-7/12 flow-root m-auto text-lg">
             <h2 className="pt-4 pb-8 text-center">Hi, I'm Andrei, I am a:</h2>
@@ -82,7 +82,7 @@ export default function Home() {
           <Panel pointURL="/embedded-finance" labelText="Embedded Finance-based Tuition Portal for WPI and Citizens Bank" imgUrl="/dashboard-exp.png" />
           <Panel pointURL="/projects" labelText="Aquarium Jellyfish Exhibit Review Map" imgUrl="/aquarium-landing.PNG" />
           <Panel pointURL="http://kevinthecarpenter.com" labelText="Kevin the Carpenter's Comedy Site" imgUrl="/kevin-site-landing.PNG" />
-          <Panel pointURL="https://grey-matter-site--kevin-carpenter-app.us-central1.hosted.app/" labelText="<b>Grey Matter Boyz</b> Band Site" imgUrl="/grey-matter-landing.PNG" />
+          <Panel pointURL="https://grey-matter-site--kevin-carpenter-app.us-central1.hosted.app/" labelText="Grey Matter Boyz Band Site" imgUrl="/grey-matter-landing.PNG" />
         </div>
         <div id="games" className="vert-arrangement">
           <Panel pointURL="/evo-prototype" labelText="Top-Down ARPG Prototype" imgUrl="/exo-prototype.png" />
