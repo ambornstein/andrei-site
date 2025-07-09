@@ -1,9 +1,9 @@
 import Image from "next/image";
+import ProjectPage from "../../template/ProjectPage";
 
 export default () => {
     return (
-        <div className="container m-auto p-4">
-            <a className="mx-[20%] text-xl panel-link max-w-sm" href="../#art">Back</a>
+        <ProjectPage>
             <div className="flex gap-2 my-24 flex-wrap flex-shrink justify-center">
                 <Image className="max-w-[346px] sm:max-w-lg"
                     src="/house-2.PNG"
@@ -40,6 +40,6 @@ export default () => {
                     unoptimized
                 />
             </div>
-        </div>
+        </ProjectPage>
     )
 }
