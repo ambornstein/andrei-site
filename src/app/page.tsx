@@ -30,8 +30,8 @@ export default function Home() {
               <div>
                 <ul className="inline w-fit">
                   <li className="m-auto bg-[--highlight] p-1 my-2">Fullstack Developer</li>
-                  <li className="m-auto bg-[--highlight] p-1 my-2">Game Dev</li>
-                  <li className="m-auto bg-[--highlight] p-1 my-2">Digital & 3D Artist</li>
+                  <li className="m-auto bg-[--highlight] p-1 my-2">Game Developer</li>
+                  <li className="m-auto bg-[--highlight] p-1 my-2">3D Artist</li>
                 </ul>
                 <p>I have been fascinated by software ever since I was young, when I started playing video games.
                   Game development workshops, robotics camps, and especially Minecraft modding camps helped me get a foundational understanding of coding

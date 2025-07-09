@@ -11,7 +11,6 @@ export default () => {
                 height={300}
                 priority />
             <div className="flex flex-row flex-wrap gap-4">
-                <a className="panel-link" href="../#sites">Back</a>
                 <a className="panel-link" href="https://thc-aquariumratings.com">Live Site</a>
                 <a className="panel-link" href="https://github.com/ambornstein/JellyfishMap">Source Code</a>
             </div>

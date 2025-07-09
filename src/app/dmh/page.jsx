@@ -1,4 +1,4 @@
-import ProjectPage from "../../../template/ProjectPage"
+import ProjectPage from "../../template/ProjectPage"
 
 export default () => {
     return (
