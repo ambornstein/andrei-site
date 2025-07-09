@@ -6,7 +6,7 @@
   .hover-label {
     @apply group-hover:opacity-100 group-hover:-translate-y-1 group-hover:scale-100
     delay-150 ease-in-out transition-all opacity-100 scale-100
-    lg:opacity-0 lg:scale-0 rounded-lg p-2 dark:bg-neutral-900 bg-background;
+    lg:opacity-0 lg:scale-0 rounded-sm p-2 bg-background;
   }
 
   .vert-arrangement {
@@ -14,19 +14,19 @@
   }
   
   .hover-chip {
-    @apply hover:bg-background dark:hover:bg-foreground p-2 text-lg sm:text-xl
+    @apply text-sm sm:text-xl bg-[--highlight] p-2 rounded-sm ring-[0.5px] ring-[--foreground];
   }
 
   .panel-link {
-    @apply w-fit py-2 px-8 ring-2 ring-[--highlight] hover:bg-foreground no-underline whitespace-nowrap
+    @apply w-fit py-2 px-8 ring-2 ring-[--foreground] bg-[--highlight] no-underline whitespace-nowrap
   }
 
   .light-grad {
-    @apply bg-gradient-to-br from-blue-300 via-stone-300 to-rose-400
+    @apply bg-gradient-to-br from-blue-300 via-stone-300 to-rose-100
   }
 
   .dark-grad {
-    @apply bg-gradient-to-br from-purple-900 via-fuchsia-400/30 to-blue-800
+    @apply bg-gradient-to-br from-purple-900 to-blue-900
   }
 }
 
@@ -34,13 +34,17 @@
   --background: #ffffff;
   --foreground: #171717;
   --highlight: #e5e5e5;
+  --link: #8d88e7;
+  --link-hover: #4338ca;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #202020;
-    --foreground: hsl(0, 0%, 84%);
-    --highlight: hsl(190, 16%, 12%);
+    --foreground: #d6d6d6;
+    --highlight: #1a2223;
+    --link: #cacaca;
+    --link-hover: #369ffa;
   }
 }
 
@@ -56,7 +60,7 @@ body {
 }
 
 a p, a {
-  @apply underline dark:text-indigo-600 dark:hover:text-indigo-500 hover:text-indigo-700 dark:visited:text-fuchsia-400 visited:text-fuchsia-600
+  @apply underline text-[--link] hover:text-[--link-hover]
 }
 
 h1 {

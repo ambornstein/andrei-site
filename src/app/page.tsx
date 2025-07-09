@@ -25,13 +25,12 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen gap-16 font-[family-name:var(--font-geist-sans)] light-grad dark:dark-grad">
+    <div className="min-h-screen gap-16 font-[family-name:var(--font-geist-sans)]">
       <header className="md:max-w-md mx-auto pt-4">
-        <div className="bg-background text-center ring-2 p-2 mx-2 rounded-md ring-neutral-700">
+        <div className="text-center p-2 mx-2">
           <h1>Andrei Bornstein</h1>
         </div>
-        <ul className="flex flex-row justify-around text-center bg-[--highlight] rounded-2xl p-2 mx-4 mt-4 text-nowrap
-        *:text-md *:rounded-full">
+        <ul className="flex flex-row justify-around text-center p-2 mx-4 mt-4 text-nowrap">
           <a className="hover-chip" tabIndex={0} onClick={() => scrollTo("about")}>About</a>
           <a className="hover-chip" tabIndex={0} onClick={() => scrollTo("sites")}>Websites</a>
           <a className="hover-chip" tabIndex={1} onClick={() => scrollTo("games")}>Games</a>
@@ -82,7 +81,6 @@ export default function Home() {
           <Panel pointURL="/embedded-finance" labelText="Embedded Finance-based Tuition Portal for WPI and Citizens Bank" imgUrl="/dashboard-exp.png" />
           <Panel pointURL="/projects" labelText="Aquarium Jellyfish Exhibit Review Map" imgUrl="/aquarium-landing.PNG" />
           <Panel pointURL="http://kevinthecarpenter.com" labelText="Kevin the Carpenter's Comedy Site" imgUrl="/kevin-site-landing.PNG" />
-          <Panel pointURL="https://grey-matter-site--kevin-carpenter-app.us-central1.hosted.app/" labelText="Grey Matter Boyz Band Site" imgUrl="/grey-matter-landing.PNG" />
         </div>
         <div id="games" className="vert-arrangement">
           <Panel pointURL="/evo-prototype" labelText="Top-Down ARPG Prototype" imgUrl="/exo-prototype.png" />
