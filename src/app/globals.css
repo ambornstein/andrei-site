@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer utilities {
+  .center {
+    @apply flex items-center justify-center
+  }
+
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
@@ -13,16 +17,40 @@
 }
 
 @layer components {
+  .chip {
+    @apply flex flex-row w-fit h-12 items-center gap-2 rounded-xl p-2 bg-zinc-500 text-neutral-800;
+  }
+
+  .dynamic-carousel {
+    @apply flex flex-row overflow-x-auto scroll-smooth snap-x snap-mandatory
+  }
+
+  .column-view {
+    @apply flex flex-col gap-4
+  }
+
+  .preview-grid {
+    @apply grid grid-rows-3 gap-4 lg:grid-cols-2 lg:grid-rows-1 
+  }
+
+  .project-preview {
+    @apply flex items-end rounded-lg lg:h-72 h-72
+  }
+
+  .button {
+    @apply bg-slate-700 rounded-lg p-2 text-center hover:bg-slate-600
+  }
+
   .mobile-op {
-    @apply px-8 max-w-screen-sm xl:px-0 lg:max-w-screen-lg 
+    @apply max-w-screen-md lg:max-w-screen-lg 
   }
 
   .hover-chip {
-    @apply text-sm sm:text-xl bg-[--highlight] p-2 rounded-sm ring-[0.5px] ring-[--foreground];
+    @apply text-sm sm:text-xl bg-[--highlight] hover:bg-[--foreground] p-2;
   }
 
   .hover-label {
-    @apply w-fit mx-auto text-[10pt] p-0.5 rounded-sm bg-background 
+    @apply w-fit mx-auto text-[10pt] p-0.5 bg-background 
     group-hover:opacity-100 group-hover:scale-100
     delay-150 ease-in-out transition-all opacity-100 scale-100
     lg:opacity-0 lg:scale-0 lg:translate-y-4 lg:text-lg lg:relative lg:p-2 ;
@@ -32,8 +60,8 @@
     @apply min-w-full items-baseline sm:p-2 gap-6 snap-center scroll-mt-10; 
   }
   
-  .panel-link {
-    @apply w-fit py-2 px-8 ring-2 ring-[--foreground] bg-[--highlight] whitespace-nowrap
+  .panel {
+    @apply bg-zinc-800 border-4 border-neutral-700 rounded-lg drop-shadow-xl w-full p-8
   }
 
   .light-grad {
@@ -55,9 +83,9 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #202020;
-    --foreground: #d6d6d6;
-    --highlight: #1a2223;
+    --background: #212121;
+    --foreground: #dddddd;
+    --highlight: #373737;
     --link: #cacaca;
     --link-hover: #369ffa;
   }
@@ -71,7 +99,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 a p, a {
@@ -79,11 +107,11 @@ a p, a {
 }
 
 h1 {
-  @apply text-4xl
+  @apply text-3xl
 }
 
 h2 {
-  @apply text-2xl
+  @apply text-xl
 }
 
 h3 {
@@ -91,7 +119,7 @@ h3 {
 }
 
 p {
-  @apply mb-8 tracking-wide leading-7
+  @apply mb-2
 }
 
 label {

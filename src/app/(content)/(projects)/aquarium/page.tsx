@@ -1,9 +1,8 @@
 import Image from "next/image"
-import ProjectPage from "../../template/ProjectPage"
 
 export default () => {
     return (
-        <ProjectPage>
+        <>
             <h1>Aquarium Site</h1>
             <Image src="/aquarium-landing.PNG"
                 alt="Next.js logo"
@@ -11,8 +10,8 @@ export default () => {
                 height={300}
                 priority />
             <div className="flex flex-row flex-wrap gap-4">
-                <a className="panel-link" href="https://thc-aquariumratings.com">Live Site</a>
-                <a className="panel-link" href="https://github.com/ambornstein/JellyfishMap">Source Code</a>
+                <a className="button" href="https://thc-aquariumratings.com">Live Site</a>
+                <a className="button" href="https://github.com/ambornstein/JellyfishMap">Source Code</a>
             </div>
             <div>
                 <h2>FAQs</h2>
@@ -31,6 +30,6 @@ export default () => {
                 <h3>Who can add reviews and images?</h3>
                 <p>While anyone can view the reviews, only privileged users and the site owner have the credentials to log in and add media. </p>
             </div>
-        </ProjectPage>
+        </>
     )
 }

@@ -1,0 +1,67 @@
+{
+    "entries": [
+        {
+            "type": "website",
+            "label": "Mock Student Tuition Portal",
+            "color": "#348080",
+            "imagePath": "/projects/dashboard-exp.png",
+            "pagePath": "/embedded-finance",
+            "techStack": ["Next.js", "Prisma ORM"],
+            "description": "A site to demonstrate a more streamlined user experiences for making tuition payments."
+        },
+        {
+            "type": "website",
+            "label": "Houston Pickeball Registry",
+            "color": "#9F4845",
+            "imagePath": "/projects/pickle-site.png",
+            "pagePath": "/pickleball",
+            "techStack": ["Next.js", "MongoDB", "Mapbox API"],
+            "description": ""
+        },
+        {
+            "type": "website",
+            "label": "Aquarium Review Site",
+            "color": "#45499F",
+            "imagePath": "/projects/aquarium-map.PNG",
+            "pagePath": "/aquarium",
+            "techStack": ["React.js", "MongoDB", "Express.js", "Mapbox API"],
+            "description": ""
+        },
+        {
+            "type": "game",
+            "label": "Enchantech 2025 XR Space",
+            "color": "#348080",
+            "imagePath": "/projects/enchantech.jpg",
+            "pagePath": "/enchantech-xr",
+            "techStack": ["Unity", "Spatial.io"],
+            "description": ""
+        },
+        {
+            "type": "game",
+            "label": "3D Squad Tactics Prototype",
+            "color": "#9F4845",
+            "imagePath": "/projects/game-banner.PNG",
+            "pagePath": "dmh",
+            "description": "A",
+            "techStack": ["Unity", "Blender"]
+        },
+        {
+            "type": "game",
+            "label": "Top-Down Action RPG Prototype",
+            "color": "#45499F",
+            "imagePath": "/projects/evo/exo-prototype.PNG",
+            "pagePath": "dmh",
+            "description": "A",
+            "techStack": ["Godot"]
+        },
+        {
+            "type": "game",
+            "label": "Text-based Roguelike Framework",
+            "color": "#348080",
+            "imagePath": "/projects/roguelike-demo.gif",
+            "pagePath": "evo-prototype",
+            "techStack": ["Java"],
+            "description": "A"
+        }
+    ]
+}

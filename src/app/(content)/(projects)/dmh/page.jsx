@@ -1,8 +1,6 @@
-import ProjectPage from "../../template/ProjectPage"
 
 export default () => {
-    return (
-        <ProjectPage>
+    return <>
             <h1>Squad Tactics Prototype</h1>
             <iframe className="mx-auto aspect-video max-w-full" width="512" src="https://www.youtube.com/embed/036747BSopQ?si=xd7icRiEaa6X61O0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             <h2 className="mb-14">Special thanks to the creators of these assets</h2>
@@ -32,6 +30,5 @@ export default () => {
                     — Chris Nolet, Unity Store
                 </a>
             </div>
-        </ProjectPage>
-    )
+        </>
 }
