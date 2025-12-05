@@ -1,3 +1,5 @@
+This is my portfolio website which I use to display projects and other things that I've worked on.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
