@@ -16,7 +16,7 @@
             "imagePath": "/projects/pickle-site.png",
             "pagePath": "/pickleball",
             "techStack": ["Next.js", "MongoDB", "Mapbox API"],
-            "description": ""
+            "description": "A site dedicated to cataloging the pickleball venues of the Houston area."
         },
         {
             "type": "website",
@@ -25,8 +25,8 @@
             "imagePath": "/projects/aquarium-map.PNG",
             "pagePath": "/aquarium",
             "techStack": ["React.js", "MongoDB", "Express.js", "Mapbox API"],
-            "description": ""
-        },
+            "description": "A custom webpage that hosts a map of aquariums in the US with reviews and images."
+        }, 
         {
             "type": "game",
             "label": "Enchantech 2025 XR Space",
@@ -34,7 +34,7 @@
             "imagePath": "/projects/enchantech.jpg",
             "pagePath": "/enchantech-xr",
             "techStack": ["Unity", "Spatial.io"],
-            "description": ""
+            "description": "A halloween-themed event space that invited students to learn about developing XR environments while learning about HCC Cares — HCC's food pantry, emergency financial assistance, health care, and emergency housing resources."
         },
         {
             "type": "game",
@@ -42,16 +42,16 @@
             "color": "#9F4845",
             "imagePath": "/projects/game-banner.PNG",
             "pagePath": "dmh",
-            "description": "A",
+            "description": "A prototype of a squad based RTS sandbox game with a grid inventory system and complex unit AI.",
             "techStack": ["Unity", "Blender"]
         },
         {
             "type": "game",
             "label": "Top-Down Action RPG Prototype",
             "color": "#45499F",
-            "imagePath": "/projects/evo/exo-prototype.PNG",
-            "pagePath": "dmh",
-            "description": "A",
+            "imagePath": "/projects/evo/exo-prototype.png",
+            "pagePath": "evo-prototype",
+            "description": "A topdown action RPG prototype created in Godot that uses free pixel art assets.",
             "techStack": ["Godot"]
         },
         {
@@ -61,7 +61,7 @@
             "imagePath": "/projects/roguelike-demo.gif",
             "pagePath": "evo-prototype",
             "techStack": ["Java"],
-            "description": "A"
+            "description": "A framework for creating traditional roguelike games with ASCII text graphics."
         }
     ]
 }

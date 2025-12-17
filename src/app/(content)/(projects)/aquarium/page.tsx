@@ -4,31 +4,44 @@ export default () => {
     return (
         <>
             <h1>Aquarium Site</h1>
-            <Image src="/aquarium-landing.PNG"
+            <Image className="m-auto" src="/projects/aquarium/aquarium-landing.PNG"
                 alt="Next.js logo"
                 width={800}
                 height={300}
                 priority />
             <div className="flex flex-row flex-wrap gap-4">
                 <a className="button" href="https://thc-aquariumratings.com">Live Site</a>
-                <a className="button" href="https://github.com/ambornstein/JellyfishMap">Source Code</a>
+                <a className="button" href="https://github.com/ambornstein/JellyfishMap">Git Repository</a>
             </div>
             <div>
-                <h2>FAQs</h2>
-                <h3>What frameworks was this site built with?</h3>
-                <p>This site uses React.JS, Node.JS, and Express.JS, and MongoDB, making it a MERN stack project.</p>
+                <p>This is project created to host reviews of aquariums all over the US.
+                    Each aquarium can have multiple reviews including overall quality rating and jellyfish exhibit rating, as well as a gallery of user-uploaded photos.
+                    The reviews are only posted with permission but available to be viewed publicly by anyone.
+                    This site implements a custom JWT authentication mechanism without using any frameworks. </p>
 
-                <h3>How is authentication handled?</h3>
-                <p>I have created a custom authentication system to implement this functionality.</p>
+                <br />
 
-                <h3>How are reviews stored?</h3>
-                <p>MongoDB stores each review and keeps track of the time it was made and the aquarium it's attached to.</p>
+                <h2>What tech stack was this site built with?</h2>
+                <p>This site uses React.JS, Node.JS, and Express.JS, and MongoDB.</p>
 
-                <h3>How are images stored?</h3>
-                <p>Each uploaded image goes to a Google Cloud Bucket with the use of Multer.</p>
+                <ul className="list-disc list-inside">
+                    <li><span className="font-semibold underline">Backend:</span> Express.js, Node.js</li>
+                    <li>Frontend: React.js</li>
+                    <li>Database: MongoDB</li>
+                    <li>Map API: MapBox SDK</li>
+                    <li>Cloud Image Hosting: Google Cloud Buckets, Multer</li>
+                    <li>Cloud Deployment: Google Cloud Run</li>
+                </ul>
 
-                <h3>Who can add reviews and images?</h3>
-                <p>While anyone can view the reviews, only privileged users and the site owner have the credentials to log in and add media. </p>
+                <br />
+
+                <h2>Site Features</h2>
+                <ul className="list-disc list-inside">
+                    <li>Interactive Map with over 100 aquarium locations in the US</li>
+                    <li>JWT User authentication from scratch</li>
+                    <li>Ability for verified users to post reviews of aquariums</li>
+                    <li>Image uploading for verified users</li>
+                </ul>
             </div>
         </>
     )

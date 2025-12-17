@@ -13,16 +13,16 @@ export default async function Home() {
     window.scrollBy(0, 0);
   }
 
-  return <div className="column-view w-full">
+  return <div className="column-view">
     <section className="column-view max-w-md m-auto my-8">
       <h1>Welcome to my Portfolio Site</h1>
-      <h2>I’m Andrei, a full-stack developer and game designer/developer. This portfolio is a collection of the projects and works I have created so far.</h2>
+      <h2>I’m Andrei, a full-stack developer and game designer/programmer. This portfolio is a collection of the projects and works I have created so far.</h2>
     </section>
     <section className="column-view panel">
       <h2>Website Projects</h2>
       <div className="preview-grid">
         {getProjects("website", 2).map((project =>
-          <PreviewPanel srcUrl={project.imagePath} label={project.label} linkRoute={project.pagePath}/>
+          <PreviewPanel key={project.label} srcUrl={project.imagePath} label={project.label} linkRoute={project.pagePath}/>
          ))}
       </div>
       <p className="ml-auto">
@@ -35,7 +35,7 @@ export default async function Home() {
       <h2>Game and VR Projects</h2>
       <div className="preview-grid">
         {getProjects("game", 2).map((project =>
-          <PreviewPanel srcUrl={project.imagePath} label={project.label} linkRoute={project.pagePath}/>
+          <PreviewPanel key={project.label} srcUrl={project.imagePath} label={project.label} linkRoute={project.pagePath}/>
          ))}
       </div>
       <p className="ml-auto">

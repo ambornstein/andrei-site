@@ -29,11 +29,11 @@ export function getIconChip(techName: string) {
 }
 
 export default function ProjectPanel(props: { srcUrl: string, label: string, description: string, linkRoute: string, children: React.ReactNode }) {
-    return <div className="space-y-2">
+    return <div className="card-container frame">
         <PreviewPanel srcUrl={props.srcUrl} label={props.label} linkRoute={props.linkRoute} />
         <div className="flex flex-row flex-wrap gap-2">
             {props.children}
         </div>
-        <p>{props.description}</p>
+        <h3>{props.description}</h3>
     </div>
 }

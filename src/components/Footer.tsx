@@ -1,7 +1,7 @@
 import Image from "next/image"
 
 export default function Footer() {
-    return <footer className="max-w-md w-[25%] h-full m-auto pb-12 mt-auto flex flex-row items-end justify-around">
+    return <footer className="max-w-md lg:w-[25%] w-full h-full m-auto pb-12 mt-auto flex flex-row items-end justify-around">
         <a href="https://www.instagram.com/andrei_bornstein/">
             <Image
                 className="invert dark:invert-0"

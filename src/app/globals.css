@@ -17,8 +17,16 @@
 }
 
 @layer components {
+  .card-container {
+    @apply flex flex-col gap-4 p-4 rounded-md bg-zinc-800;
+  }
+
+  .project-label {
+    @apply absolute bg-zinc-800 p-2 m-2 rounded-lg drop-shadow-lg text-xl;
+  }
+
   .chip {
-    @apply flex flex-row w-fit h-12 items-center gap-2 rounded-xl p-2 bg-zinc-500 text-neutral-800;
+    @apply flex flex-row w-fit items-center gap-2 rounded-lg p-2 bg-neutral-400 text-neutral-900;
   }
 
   .dynamic-carousel {
@@ -30,7 +38,7 @@
   }
 
   .preview-grid {
-    @apply grid grid-rows-3 gap-4 lg:grid-cols-2 lg:grid-rows-1 
+    @apply grid grid-rows-2 gap-4 lg:grid-cols-2 lg:grid-rows-1 
   }
 
   .project-preview {
@@ -38,11 +46,11 @@
   }
 
   .button {
-    @apply bg-slate-700 rounded-lg p-2 text-center hover:bg-slate-600
+    @apply bg-zinc-800 rounded-lg p-2 text-center hover:bg-[--highlight]
   }
 
   .mobile-op {
-    @apply max-w-screen-md lg:max-w-screen-lg 
+    @apply max-w-screen-sm lg:max-w-screen-lg px-4 lg:px-0 min-h-screen m-auto
   }
 
   .hover-chip {
@@ -53,7 +61,7 @@
     @apply w-fit mx-auto text-[10pt] p-0.5 bg-background 
     group-hover:opacity-100 group-hover:scale-100
     delay-150 ease-in-out transition-all opacity-100 scale-100
-    lg:opacity-0 lg:scale-0 lg:translate-y-4 lg:text-lg lg:relative lg:p-2 ;
+    lg:opacity-0 lg:scale-0 lg:translate-y-4 lg:text-lg lg:relative lg:p-2;
   }
 
   .showcase-grid {
@@ -61,15 +69,11 @@
   }
   
   .panel {
-    @apply bg-zinc-800 border-4 border-neutral-700 rounded-lg drop-shadow-xl w-full p-8
+    @apply bg-zinc-900 drop-shadow-xl w-full p-8
   }
 
-  .light-grad {
-    @apply bg-gradient-to-br from-blue-300 via-stone-300 to-rose-100
-  }
-
-  .dark-grad {
-    @apply bg-gradient-to-br from-purple-900 to-blue-900
+  .frame {
+    @apply border-2 border-neutral-700 rounded-lg
   }
 }
 
@@ -77,15 +81,15 @@
   --background: #ffffff;
   --foreground: #171717;
   --highlight: #e5e5e5;
-  --link: #ca3838;
+  --link: #cacaca;
   --link-hover: #0609c7;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #212121;
+    --background: #111111;
     --foreground: #dddddd;
-    --highlight: #373737;
+    --highlight: #404040;
     --link: #cacaca;
     --link-hover: #369ffa;
   }
@@ -111,7 +115,7 @@ h1 {
 }
 
 h2 {
-  @apply text-xl
+  @apply text-2xl
 }
 
 h3 {

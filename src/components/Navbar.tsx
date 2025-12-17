@@ -5,9 +5,9 @@ export default function Navbar() {
       <li><a href="/">Home</a></li>
 
       <li className="group">Projects
-        <ul className="fixed top-12 -translate-x-2 bg-zinc-800 border-4 border-neutral-700 p-2 z-10 group-hover:block hover:block hidden">
-          <li>Websites</li>
-          <li>Games and VR</li>
+        <ul className="fixed top-11 -translate-x-3 bg-[--highlight] rounded-lg py-1 px-2 space-y-1 z-10 group-hover:block hover:block hidden">
+          <li><a href="/websites">Websites</a></li>
+          <li><a href="/games-and-vr">Games and VR</a></li>
         </ul>
       </li>
       <li><a href="/gallery">Gallery</a></li>
