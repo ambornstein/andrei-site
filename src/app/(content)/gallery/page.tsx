@@ -19,7 +19,7 @@ export default function GalleryPage() {
                 alt="Blender Gallery"
             />
             <img
-                src="/gallery/marble-desk.PNG"
+                src="/gallery/marble-desk.png"
                 alt="Blender Gallery"
             />
             <img

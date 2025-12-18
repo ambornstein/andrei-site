@@ -22,7 +22,7 @@
             "type": "website",
             "label": "Aquarium Review Site",
             "color": "#45499F",
-            "imagePath": "/projects/aquarium-map.PNG",
+            "imagePath": "/projects/aquarium/aquarium-landing.PNG",
             "pagePath": "/aquarium",
             "techStack": ["React.js", "MongoDB", "Express.js", "Mapbox API"],
             "description": "A custom webpage that hosts a map of aquariums in the US with reviews and images."
@@ -50,7 +50,7 @@
             "label": "Top-Down Action RPG Prototype",
             "color": "#45499F",
             "imagePath": "/projects/evo/exo-prototype.png",
-            "pagePath": "evo-prototype",
+            "pagePath": "https://github.com/ambornstein/EvoWorld",
             "description": "A topdown action RPG prototype created in Godot that uses free pixel art assets.",
             "techStack": ["Godot"]
         },
@@ -59,7 +59,7 @@
             "label": "Text-based Roguelike Framework",
             "color": "#348080",
             "imagePath": "/projects/roguelike-demo.gif",
-            "pagePath": "evo-prototype",
+            "pagePath": "https://github.com/ambornstein/ASCII-Game-Framework",
             "techStack": ["Java"],
             "description": "A framework for creating traditional roguelike games with ASCII text graphics."
         }

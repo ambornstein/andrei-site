@@ -1,8 +1,10 @@
+import Image from "next/image"
 
 export default () => {
     return (
         <>
             <h1>Embedded Finance Tuition Portal</h1>
+            <Image src="/projects/dashboard-exp.png" width={800} height={400} className="w-full my-4"/>
             <div className="flex flex-row flex-wrap gap-4">
                 <a className="button" href="https://digital.wpi.edu/concern/student_works/cf95jg96c?locale=en">Academic Report</a>
                 <a className="button" href="https://drive.google.com/drive/folders/1h79lR82fV9iK81qv4qgoalKJjMW7kJAy?usp=drive_link">Demo Screenshots</a>

@@ -4,7 +4,7 @@ export default () => {
     return (
         <>
             <h1>Aquarium Site</h1>
-            <Image className="m-auto" src="/projects/aquarium/aquarium-landing.PNG"
+            <Image className="w-full my-4" src="/projects/aquarium/aquarium-landing.PNG"
                 alt="Next.js logo"
                 width={800}
                 height={300}
@@ -26,11 +26,11 @@ export default () => {
 
                 <ul className="list-disc list-inside">
                     <li><span className="font-semibold underline">Backend:</span> Express.js, Node.js</li>
-                    <li>Frontend: React.js</li>
-                    <li>Database: MongoDB</li>
-                    <li>Map API: MapBox SDK</li>
-                    <li>Cloud Image Hosting: Google Cloud Buckets, Multer</li>
-                    <li>Cloud Deployment: Google Cloud Run</li>
+                    <li><span className="font-semibold underline">Frontend:</span> React.js</li>
+                    <li><span className="font-semibold underline">Database:</span> MongoDB</li>
+                    <li><span className="font-semibold underline">Map API:</span> MapBox SDK</li>
+                    <li><span className="font-semibold underline">Image Hosting and Uploads:</span> Google Cloud Buckets, Multer</li>
+                    <li><span className="font-semibold underline">Cloud Deployment:</span> Google Cloud Run</li>
                 </ul>
 
                 <br />

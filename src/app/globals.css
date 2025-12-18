@@ -42,7 +42,7 @@
   }
 
   .project-preview {
-    @apply flex items-end rounded-lg lg:h-72 h-72
+    @apply flex items-end rounded-lg
   }
 
   .button {
@@ -69,7 +69,7 @@
   }
   
   .panel {
-    @apply bg-zinc-900 drop-shadow-xl w-full p-8
+    @apply bg-zinc-900 drop-shadow-xl w-full p-4
   }
 
   .frame {
@@ -115,15 +115,15 @@ h1 {
 }
 
 h2 {
-  @apply text-2xl
+  @apply text-2xl mt-4 mb-1
 }
 
 h3 {
-  @apply text-lg
+  @apply text-xl mt-4 mb-1
 }
 
 p {
-  @apply mb-2
+  @apply mb-2 text-lg;
 }
 
 label {

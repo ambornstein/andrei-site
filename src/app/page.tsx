@@ -14,9 +14,9 @@ export default async function Home() {
   }
 
   return <div className="column-view">
-    <section className="column-view max-w-md m-auto my-8">
-      <h1>Welcome to my Portfolio Site</h1>
-      <h2>I’m Andrei, a full-stack developer and game designer/programmer. This portfolio is a collection of the projects and works I have created so far.</h2>
+    <section className="column-view max-w-md m-auto mb-4">
+      <h2>Welcome to my Portfolio Site</h2>
+      <h3>I’m Andrei, a full-stack developer and game designer/programmer. This portfolio is a collection of the projects and works I have created so far.</h3>
     </section>
     <section className="column-view panel">
       <h2>Website Projects</h2>
